@@ -121,6 +121,9 @@ buildPythonPackage rec {
     "keras/src/backend/tensorflow/saved_model_test.py"
     "keras/src/export/export_lib_test.py"
 
+    # TypeError: Cannot convert a MPS Tensor to float64 dtype as the MPS framework doesn't support float64. Please use float32 instead.
+    "keras/src/utils/backend_utils_test.py"
+
     # KeyError: 'Unable to synchronously open object (bad object header version number)'
     "keras/src/saving/file_editor_test.py"
   ];
